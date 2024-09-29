@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Layout principal de la page */
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar de 250px et le reste pour le contenu principal */
+    height: 100vh;
+}
+
+/* Style pour la sidebar */
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.sidebar nav a:hover {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Section principale */
+.main-content {
+    padding: 20px;
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+/* Grille des cartes statistiques */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grille responsive pour les cartes */
+    gap: 20px;
+}
+
+/* Style pour chaque carte */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
